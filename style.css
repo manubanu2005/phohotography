@@ -1,0 +1,188 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+ gap: 2rem;
+}
+
+.title{
+    display:flex;
+    justify-content: space-between;
+    align-content: center;
+max-height: 80px; 
+flex-wrap: wrap;
+}
+.logo{
+order: -1;
+flex: 2 1 auto;
+    max-width: fit-content;
+}
+.logo img{
+    width: auto;
+    height: 80px;
+}
+.about{
+    display: flex;
+    color:hsl(51, 84%, 32%);
+    align-content: center;
+    font-size: 15px;
+    flex: 1 1 auto;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 2px;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap:2rem;
+    margin-right: 5px;
+    order: 0;
+}
+.welcome{
+    display:flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+}
+.welcome1{
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+    width: 300px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.explore{
+    font-size: 18px;
+    color: hsl(51, 84%, 32%);
+text-align: center;
+width: 300px;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.button{
+    width: 100px;
+    height: 30px;
+    background-color: hsl(51, 84%, 32%);
+    color: white;
+    border-radius: 5px;
+    border: transparent;
+    align-self: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+.button:hover{
+    background-color: goldenrod;
+}
+.preimg{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3px;
+}
+.preimg img{
+    width: auto;
+    height: 200px;
+    border-radius: 6px; 
+    flex: 0 1 auto;
+}
+.preimgl img{
+    transition: opacity 0.3s ease;
+}
+.preimgl:hover img{
+    opacity:0.6;
+}
+.update{
+    margin-top: 60px;
+    color: rgba(77, 74, 74, 0.493);
+    align-self: flex-end;
+}
+.story1{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid hsl(51, 84%, 32%);
+}
+.storyl{
+    transition: opacity 0.3 ease;
+}
+
+.storyl:hover{
+    opacity: 0.6;
+}
+.story{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+/* Aici incepe Contact.html (titlul si logo este acealasi la toate html*/
+.contactme{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+    font-size: 45px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+flex-wrap: wrap;
+}
+.cod{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.cod img{
+    height: 300px;
+    width: auto;
+}
+.cod p{
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-size: 20px;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:5px;
+}
+.info button{
+    background-color:hsl(51, 84%, 32%); 
+    border-radius: 5px;
+    border-color: transparent;
+    color: white;
+    width: 150px;
+    height: 30px;
+}
+.info p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 17px;
+}
+/* Aici incepe Gallery.html*/
+.titleg{
+ display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+    font-size: 45px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+flex-wrap: wrap;
+}
+.photos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:3px;
+}
+.photos img{
+     width: auto;
+    height: 200px;
+    border-radius: 6px; 
+    flex: 0 1 auto;
+    gap: 3px;
+}
