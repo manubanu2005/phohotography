@@ -1,3 +1,4 @@
+/* Aici incepe titlul care este folosit la toate paginile*/
 .container{
     display: flex;
     flex-direction: column;
@@ -9,32 +10,33 @@
     display:flex;
     justify-content: space-between;
     align-content: center;
-max-height: 80px; 
-flex-wrap: wrap;
+max-height: 90px; 
+flex-wrap: nowrap;
+border-bottom: 1px solid grey;
 }
 .logo{
 order: -1;
-flex: 2 1 auto;
+flex: 1 1 auto;
     max-width: fit-content;
 }
 .logo img{
     width: auto;
-    height: 80px;
+    height: 90px;
 }
 .about{
     display: flex;
     color:hsl(51, 84%, 32%);
     align-content: center;
-    font-size: 15px;
+    font-size: 25px;
     flex: 1 1 auto;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    padding: 2px;
     justify-content: flex-end;
     flex-wrap: wrap;
     gap:2rem;
     margin-right: 5px;
     order: 0;
 }
+/* Aici incepe pagina principala*/
 .welcome{
     display:flex;
     flex-direction: column;
@@ -185,4 +187,34 @@ flex-wrap: wrap;
     border-radius: 6px; 
     flex: 0 1 auto;
     gap: 3px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+.photos img:hover{
+    transform: scale(1.5);
+    z-index: 10;
+    position: relative;
+}
+.photos button{
+    border: none;
+    padding: 0;
+    background: none;
+    cursor: pointer;
+}
+.lightbox{
+    background-color: transparent;
+    padding: 1rem;
+    border: none;
+}
+.lightbox img{
+    max-width: 90vw;
+    max-height: 90vh;
+    border-radius: 6px;
+}
+.lightbox :popover-open{
+    animation: zoom .2s ease;
+}
+@keyframes zoom{
+    from{opacity: 0;transform: scale(.95);}
+    to{opacity: 1;transform: scale(1);}
 }
