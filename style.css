@@ -81,6 +81,8 @@ a{
     flex-wrap: wrap;
     justify-content: center;
     gap: 3px;
+    border-bottom: 1px solid grey;
+    padding-bottom: 4rem;
 }
 .preimg img{
     width: auto;
@@ -98,6 +100,12 @@ a{
     margin-top: 60px;
     color: rgba(77, 74, 74, 0.493);
     align-self: flex-end;
+}
+.instadec{
+    text-align: center;
+color: hsl(51, 84%, 32%);
+font-size: 20px; 
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;   
 }
 .story1{
     height: 100px;
@@ -195,26 +203,32 @@ flex-wrap: wrap;
     z-index: 10;
     position: relative;
 }
-.photos button{
-    border: none;
-    padding: 0;
-    background: none;
-    cursor: pointer;
+
+#overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 999;
 }
-.lightbox{
-    background-color: transparent;
-    padding: 1rem;
-    border: none;
+
+#overlay.show {
+  opacity: 1;
+  pointer-events: auto;
 }
-.lightbox img{
-    max-width: 90vw;
-    max-height: 90vh;
-    border-radius: 6px;
+
+#overlay-img {
+  max-width: 90vw;
+  max-height: 90vh;
+  transform: scale(0.9);
+  transition: transform 0.3s ease;
 }
-.lightbox :popover-open{
-    animation: zoom .2s ease;
-}
-@keyframes zoom{
-    from{opacity: 0;transform: scale(.95);}
-    to{opacity: 1;transform: scale(1);}
+
+#overlay.show #overlay-img {
+  transform: scale(1);
 }
